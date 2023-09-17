@@ -9,7 +9,7 @@ const app = express()
 app.use(bodyParser.json())
 app.use(cors())
 
-mongoose.connect('mongodb+srv://gdev:admin@cluster0.lx0zr4n.mongodb.net/customer_details')
+mongoose.connect('mongodb+srv://<user>:<password>@cluster0.lx0zr4n.mongodb.net/customer_details')
 const schemaUser = new mongoose.Schema({
   email:String,
   password:String
